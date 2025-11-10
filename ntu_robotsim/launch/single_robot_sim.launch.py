@@ -52,8 +52,8 @@ def generate_launch_description():
     ntu_hmrs_sim_share_dir = get_package_share_directory('ntu_robotsim')
 
     # Simple hack to get the world argument from the command line, see https://answers.ros.org/question/376816/how-to-pass-launch-args-dynamically-during-launch-time/
-    # print(f'Set the world (default maze), e.g. ros2 launch ntu_hmrs_sim single_robot_sim.launch.py world:=maze')
-    # print(f'Available worlds: maze, marsyard2020')
+    # print(f'Set the world (default maze), e.g. ros2 launch ntu_robot_sim single_robot_sim.launch.py world:=maze')
+    # print(f'Available worlds: maze')
     # above functionality is not used here. You have to create config files to use above functionality.
     world = 'maze'
     for arg in sys.argv:
